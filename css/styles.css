@@ -58,3 +58,8 @@ img{
     max-width: 100%;
     display: block;
 }
+
+/* -- Utilidades -- */
+.texto-centrado{
+    text-align: center;
+}
