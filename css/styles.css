@@ -1,5 +1,12 @@
 /* -- Custom Properties */
 :root{
+    --colorPrincipal: #1073BA;
+    --colorSercundario: #00DA55;
+    --colorNegro: #000000;
+    --colorGris: #3B3B3B;
+    -colorGrisClaro: #E1E1E1;
+    --colorBlanco: #FFFFFF;
+    
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: font-family: 'Lato', sans-serif;
 }
