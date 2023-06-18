@@ -6,7 +6,17 @@
     --colorGris: #3B3B3B;
     -colorGrisClaro: #E1E1E1;
     --colorBlanco: #FFFFFF;
-    
+
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: font-family: 'Lato', sans-serif;
+}
+
+/* -- Reset -- */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
 }
