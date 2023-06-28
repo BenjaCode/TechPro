@@ -4,7 +4,7 @@
     --colorSercundario: #00DA55;
     --colorNegro: #000000;
     --colorGris: #3B3B3B;
-    -colorGrisClaro: #E1E1E1;
+    --colorGrisClaro: #E1E1E1;
     --colorBlanco: #FFFFFF;
 
     --fuentePrincipal: 'Roboto', sans-serif;
@@ -221,3 +221,107 @@ img{
     font-size: 2rem;
     line-height: 2;
 }
+
+/* -- Modelos -- */
+.modelos{
+    padding: 5rem 0;
+}
+
+.header-modelos{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+}
+
+.listado-modelos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .listado-modelos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 20rem);
+        gap: 4rem;
+    }
+}
+
+.modelo{
+    background-color: var(--colorGrisClaro);
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    color: var(--colorPrincipal);
+    border-radius: 2rem;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition-property: scale background-size;
+    transition-duration: .3s;
+}
+.modelo:hover{
+    transform: scale(1.1);
+    background-size: 14rem;
+}
+.modelo:first-of-type{
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .modelo:last-of-type{
+        padding-left: 0;
+        display: unset;
+        margin-bottom: 0;
+    }
+}
+
+.modelo h3{
+    font-size: 2.4rem;
+}
+
+.modelo .precio{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.modelo-x{
+    background-image: url(../img/modelo-x.svg); 
+}
+
+.modelo-y{
+    background-image: url(../img/modelo-y.svg);
+}
+
+.modelo-z{
+    background-image: url(../img/modelo-z.svg);
+    background-color: var(--colorPrincipal);
+    color: var(--colorBlanco);
+}
+@media (min-width: 768px) {
+    .modelo-z{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        background-size: 24rem;
+        background-position: center 90%;
+    }
+    .modelo-z:hover{
+        background-size: 26rem;
+    }
+}
+
+.modelo-z .precio{
+    font-size: 6rem;
+}
+@media (min-width: 768px) {
+    .modelo-z h3{
+        font-size: 4rem;
+    }
+
+    .modelo-z h3,
+    .modelo-z .precio{
+        text-align: center;
+        padding-left: 0;
+    }
+}   
