@@ -380,3 +380,24 @@ img{
     border: none;
     cursor: pointer;
 }
+
+/* -- Footer -- */
+.footer{
+    background-color: var(--colorPrincipal);
+    margin: 15rem 0 0 0;
+}
+@media (min-width: 768px) {
+    .footer{
+        margin: 0;
+    }
+}
+
+.footer p{
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--colorBlanco);
+    margin: 0;
+    padding: 2rem 0;
+}
